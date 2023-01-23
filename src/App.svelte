@@ -1,10 +1,13 @@
+<script lang="ts">
+    import GitHub from "./components/GitHub.svelte";
+</script>
+
+<div id="main">
+    <GitHub />
+</div>
+
 <style>
-    .main {
-        overflow: auto;
+    #main:nth-child(1) {
+        padding-top: 1em;
     }
 </style>
-
-<div class="main">
-    <h1>Nils Website</h1>
-    <h3>Work in Progress...</h3>
-</div>

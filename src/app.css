@@ -1,6 +1,7 @@
 :root {
     --bg: #131316;
-    --txt: #EFEFFE
+    --txt: #EFEFFE;
+    --txt2: #bbbbbb;
 }
 
 body {
@@ -19,4 +20,14 @@ body {
 .noMP {
     margin: 0;
     padding: 0;
+}
+
+a.noStyle:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a.noStyle:visited {
+    text-decoration: inherit;
+    color: inherit;
 }
