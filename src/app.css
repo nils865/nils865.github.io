@@ -2,6 +2,8 @@
     --bg: #131316;
     --txt: #EFEFFE;
     --txt2: #bbbbbb;
+    --border: #444449;
+    --border-dark: #242429;
 }
 
 body {
@@ -15,6 +17,20 @@ body {
     height: 100vh;
     overflow: auto;
     background-color: var(--bg);
+}
+
+.fit-content {
+    width: fit-content;
+    height: fit-content;
+}
+
+.radio {
+    border-radius: 100%;
+    width: 2px;
+    height: 2px;
+    background-color: var(--txt);
+
+    margin: calc((1em - 2px) / 2);
 }
 
 .noMP {
