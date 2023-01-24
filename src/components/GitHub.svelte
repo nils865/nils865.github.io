@@ -2,13 +2,15 @@
     let pfp: string = "img/placeholder.png";
     let name: string = "placeholder";
     let description: string = "placeholder";
+    let username: string = "placeholder"
 
     fetch('https://api.github.com/users/nils865')
         .then((response) => response.json())
         .then((data) => {
             pfp = data["avatar_url"];
-            name = data["name"]
-            description = data["bio"]
+            name = data["name"];
+            description = data["bio"];
+            username = data["login"];
         });
 
 </script>
@@ -21,12 +23,14 @@
         <a href="https://github.com/nils865" target="_blank" rel="noreferrer" class="noMP noStyle">{name}</a>
         <p id="description" class="noMP">{description}</p>
     </div>
+    <img src="https://ghchart.rshah.org/843690/{username}" alt="commit-history" class="commits">
 </div>
 
 <style>
-    .placeholder {
-        height: 0.35rem;
-        width: 0;
+    .commits {
+        height: 104px;
+        width: 663px;
+        filter: invert(1);
     }
 
     #profile {
