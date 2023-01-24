@@ -18,7 +18,7 @@
         </div>
     </div>
     <div id="textbox">
-        <span class="prefix layered">$:</span>
+        <p class="prefix layered noMP">$:</p>
         <p class="noMP layered">
             <Typewriter typetext={text}/>
         </p>
@@ -64,7 +64,7 @@
     }
 
 
-    #textbox > p {
+    #textbox > p:not(.prefix) {
         color: var(--terminal-txt);
 
         margin-left: 1.5em;

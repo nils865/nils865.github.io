@@ -4,6 +4,7 @@
 </script>
 
 <div id="main">
+    <p>some switches</p>
     <GitHub />
     <div class="space"></div>
     <Terminal name="description" text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ipsa ea aliquam cupiditate optio id, consectetur cumque nisi at quia nemo, animi ex similique molestias sit! Odit est sed in." />
